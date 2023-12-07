@@ -52,6 +52,7 @@ default_targets="
     sidecar-shim
     network-slirp-binding
     network-passt-binding
+    network-vdpa-binding
 "
 
 PUSH_TARGETS=(${PUSH_TARGETS:-${default_targets}})
