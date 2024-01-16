@@ -85,11 +85,14 @@ func IsHostDevVMI(vmi *v1.VirtualMachineInstance) bool {
 
 // Check if a VMI spec requests a VFIO device
 func IsVFIOVMI(vmi *v1.VirtualMachineInstance) bool {
+	return true
+	/*
+	   	if IsHostDevVMI(vmi) || IsGPUVMI(vmi) || IsSRIOVVmi(vmi) {
+	   		return true
+	   	}
 
-	if IsHostDevVMI(vmi) || IsGPUVMI(vmi) || IsSRIOVVmi(vmi) {
-		return true
-	}
-	return false
+	   return false
+	*/
 }
 
 // Check if the VMI includes passt network interface(s)
