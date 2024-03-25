@@ -211,7 +211,7 @@ lint:
 	  pkg/instancetype/... \
 	  pkg/network/namescheme/... \
 	  pkg/network/domainspec/... \
-	  pkg/network/sriov/... \
+	  pkg/network/deviceinfo/... \
 	  tests/console/... \
 	  tests/libnet/... \
 	  tests/libnode/... \
